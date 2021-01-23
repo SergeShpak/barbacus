@@ -1,0 +1,15 @@
+statefulset:
+    resources:
+        limits:
+            cpu: "1"
+            memory: "4Gi"
+        requests:
+            cpu: "1"
+            memory: "4Gi"
+    replicas: 1
+conf:
+    cache: "1Gi"
+    max-sql-memory: "1Gi"
+    single-node: true
+tls:
+    enabled: false
